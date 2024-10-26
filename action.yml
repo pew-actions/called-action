@@ -1,0 +1,20 @@
+name: pew-actions/called-action
+description: Get information on the running called action
+
+inputs:
+  run-id:
+    description: 'Run id of the github run'
+    default: ${{ github.run_id }}
+  token:
+    description: 'Github token with actions:read permissions'
+    default: ${{ github.token }}
+
+outputs:
+  path:
+    description: 'The full path of the action'
+  ref:
+    description: 'The commit of the action'
+
+runs:
+  using: node20
+  main: dist/index.js
