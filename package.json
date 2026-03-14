@@ -21,6 +21,6 @@
     "@actions/github": "^6.0.0"
   },
   "engines": {
-    "node": ">= 20"
+    "node": ">= 24"
   }
 }
